@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
-options: "4ce447d00890011850b484b4f810ce9f3ad2a3ece452ce0fa5983feca9f01c6e"
-build_start_time: [1691960068, 156954050]
-build_end_time: [1691960090, 921917915]
-inputs:
-  "/Users/davidaleman/Documents/wordsearch/macos/Flutter/GeneratedPluginRegistrant.swift": [1691959477, 274915218]
-  "/Users/davidaleman/Documents/wordsearch/macos/Runner/AppDelegate.swift": [1691713595, 989236116]
-  "/Users/davidaleman/Documents/wordsearch/macos/Runner/MainFlutterWindow.swift": [1691713595, 993822097]

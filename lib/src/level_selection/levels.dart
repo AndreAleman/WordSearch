@@ -22,60 +22,6 @@ const gameLevels = [
     achievementIdIOS: 'finished',
     achievementIdAndroid: 'CdfIhE96aspNWLGSQg',
   ),
-  GameLevel(
-    number: 4,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CdfIhw96aspNWLGSQg',
-  ),
-  GameLevel(
-    number: 5,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CdfdhE96aspNWLGSQg',
-  ),
-  GameLevel(
-    number: 6,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CdfIhEa6aspNWLGSQg',
-  ),
-  GameLevel(
-    number: 7,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CdfIhE96aspNyLGSQg',
-  ),
-  GameLevel(
-    number: 8,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CdfIhEaaaspNyLGSQg',
-  ),
-  GameLevel(
-    number: 9,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CqqIhE96aspNyLGSQg',
-  ),
-  GameLevel(
-    number: 10,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CdfIhE96abbNyLGSQg',
-  ),
-  GameLevel(
-    number: 11,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CdfIhE96aspNyooSQg',
-  ),
-  GameLevel(
-    number: 12,
-    difficulty: 100,
-    achievementIdIOS: 'finished',
-    achievementIdAndroid: 'CdfIhE96appNyLGSQg',
-  ),
 ];
 
 class GameLevel {
