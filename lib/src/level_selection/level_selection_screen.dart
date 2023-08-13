@@ -38,7 +38,8 @@ class LevelSelectionScreen extends StatelessWidget {
             ),
             const SizedBox(height: 50),
             Expanded(
-              child: ListView(
+              child: GridView.count(
+                crossAxisCount: 2,
                 children: [
                   for (final level in gameLevels)
                     ListTile(

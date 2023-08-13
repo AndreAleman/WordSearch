@@ -1,0 +1,18 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "22bb83bfe38eaf87e03bcc6e03a9a0b4ebbb70552787b17714d2e68653369275"
+build_start_time: [1691959949, 871755123]
+build_end_time: [1691959981, 448544025]
+inputs:
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Achievements.swift": [1691715927, 618556976]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Auth.swift": [1691715927, 627402782]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/BaseGamesServices.swift": [1691715927, 579800367]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Leaderboards.swift": [1691715927, 666599750]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Models/AchievementItemData.swift": [1691715927, 608971118]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Models/LeaderboardScoreData.swift": [1691715927, 589664936]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Models/Method.swift": [1691715927, 602803945]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Models/SavedGame.swift": [1691715927, 595563650]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Player.swift": [1691715927, 558801174]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/SaveGame.swift": [1691715927, 638329267]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/SwiftGamesServicesPlugin.swift": [1691715927, 572410583]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Util/Error.swift": [1691715927, 646061897]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/games_services-3.0.1/macos/Classes/Util/ViewController.swift": [1691715927, 654560089]

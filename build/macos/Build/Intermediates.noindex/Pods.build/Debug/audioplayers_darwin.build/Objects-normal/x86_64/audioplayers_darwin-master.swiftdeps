@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "9db5b495ca71ae960c150f9239c3f043055a1ecad37864ee5bb8a2bf3fba8cf0"
+build_start_time: [1691959949, 987266063]
+build_end_time: [1691959981, 974791049]
+inputs:
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/audioplayers_darwin-5.0.1/macos/Classes/AudioContext.swift": [1691715926, 774415016]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/audioplayers_darwin-5.0.1/macos/Classes/SwiftAudioplayersDarwinPlugin.swift": [1691715926, 793586015]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/audioplayers_darwin-5.0.1/macos/Classes/Utils.swift": [1691715926, 770502567]
+  "/Users/davidaleman/.pub-cache/hosted/pub.dev/audioplayers_darwin-5.0.1/macos/Classes/WrappedMediaPlayer.swift": [1691715926, 784619092]

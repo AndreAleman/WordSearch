@@ -1,0 +1,120 @@
+Target dependency graph (23 targets)
+PromisesObjC in Pods, no dependencies
+GoogleUtilities in Pods, depends on:
+PromisesObjC in Pods (explicit)
+FirebaseCoreInternal in Pods, depends on:
+GoogleUtilities in Pods (explicit)
+FirebaseCore in Pods, depends on:
+FirebaseCoreInternal in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+FirebaseCoreExtension in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseInstallations in Pods, depends on:
+FirebaseCore in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+PromisesObjC in Pods (explicit)
+nanopb in Pods, no dependencies
+GoogleDataTransport in Pods, depends on:
+GoogleUtilities in Pods (explicit)
+PromisesObjC in Pods (explicit)
+nanopb in Pods (explicit)
+PromisesSwift in Pods, depends on:
+PromisesObjC in Pods (explicit)
+FirebaseSessions in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseCoreExtension in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+GoogleDataTransport in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+PromisesSwift in Pods (explicit)
+nanopb in Pods (explicit)
+FirebaseCrashlytics in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+FirebaseSessions in Pods (explicit)
+GoogleDataTransport in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+PromisesObjC in Pods (explicit)
+nanopb in Pods (explicit)
+FlutterMacOS in Pods, no dependencies
+audioplayers_darwin in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+Firebase in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseCrashlytics in Pods (explicit)
+firebase_core in Pods, depends on:
+Firebase in Pods (explicit)
+FlutterMacOS in Pods (explicit)
+firebase_crashlytics in Pods, depends on:
+Firebase in Pods (explicit)
+FlutterMacOS in Pods (explicit)
+firebase_core in Pods (explicit)
+games_services in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+in_app_purchase_storekit in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+path_provider_foundation in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+shared_preferences_foundation in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+Flutter Assemble in Runner, depends on:
+PromisesObjC in Pods (implicit dependency via options '-framework FBLPromises' in build setting 'OTHER_LDFLAGS')
+FirebaseCore in Pods (implicit dependency via options '-framework FirebaseCore' in build setting 'OTHER_LDFLAGS')
+FirebaseCoreExtension in Pods (implicit dependency via options '-framework FirebaseCoreExtension' in build setting 'OTHER_LDFLAGS')
+FirebaseCoreInternal in Pods (implicit dependency via options '-framework FirebaseCoreInternal' in build setting 'OTHER_LDFLAGS')
+FirebaseCrashlytics in Pods (implicit dependency via options '-framework FirebaseCrashlytics' in build setting 'OTHER_LDFLAGS')
+FirebaseInstallations in Pods (implicit dependency via options '-framework FirebaseInstallations' in build setting 'OTHER_LDFLAGS')
+FirebaseSessions in Pods (implicit dependency via options '-framework FirebaseSessions' in build setting 'OTHER_LDFLAGS')
+GoogleDataTransport in Pods (implicit dependency via options '-framework GoogleDataTransport' in build setting 'OTHER_LDFLAGS')
+GoogleUtilities in Pods (implicit dependency via options '-framework GoogleUtilities' in build setting 'OTHER_LDFLAGS')
+PromisesSwift in Pods (implicit dependency via options '-framework Promises' in build setting 'OTHER_LDFLAGS')
+audioplayers_darwin in Pods (implicit dependency via options '-framework audioplayers_darwin' in build setting 'OTHER_LDFLAGS')
+firebase_core in Pods (implicit dependency via options '-framework firebase_core' in build setting 'OTHER_LDFLAGS')
+firebase_crashlytics in Pods (implicit dependency via options '-framework firebase_crashlytics' in build setting 'OTHER_LDFLAGS')
+games_services in Pods (implicit dependency via options '-framework games_services' in build setting 'OTHER_LDFLAGS')
+in_app_purchase_storekit in Pods (implicit dependency via options '-framework in_app_purchase_storekit' in build setting 'OTHER_LDFLAGS')
+nanopb in Pods (implicit dependency via options '-framework nanopb' in build setting 'OTHER_LDFLAGS')
+path_provider_foundation in Pods (implicit dependency via options '-framework path_provider_foundation' in build setting 'OTHER_LDFLAGS')
+shared_preferences_foundation in Pods (implicit dependency via options '-framework shared_preferences_foundation' in build setting 'OTHER_LDFLAGS')
+Pods-Runner in Pods, depends on:
+Firebase in Pods (explicit)
+FirebaseCore in Pods (explicit)
+FirebaseCoreExtension in Pods (explicit)
+FirebaseCoreInternal in Pods (explicit)
+FirebaseCrashlytics in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+FirebaseSessions in Pods (explicit)
+FlutterMacOS in Pods (explicit)
+GoogleDataTransport in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+PromisesObjC in Pods (explicit)
+PromisesSwift in Pods (explicit)
+audioplayers_darwin in Pods (explicit)
+firebase_core in Pods (explicit)
+firebase_crashlytics in Pods (explicit)
+games_services in Pods (explicit)
+in_app_purchase_storekit in Pods (explicit)
+nanopb in Pods (explicit)
+path_provider_foundation in Pods (explicit)
+shared_preferences_foundation in Pods (explicit)
+Runner in Runner, depends on:
+Flutter Assemble in Runner (explicit)
+Pods-Runner in Pods (implicit dependency via file 'Pods_Runner.framework' in build phase 'Link Binary')
+PromisesObjC in Pods (implicit dependency via options '-framework FBLPromises' in build setting 'OTHER_LDFLAGS')
+FirebaseCore in Pods (implicit dependency via options '-framework FirebaseCore' in build setting 'OTHER_LDFLAGS')
+FirebaseCoreExtension in Pods (implicit dependency via options '-framework FirebaseCoreExtension' in build setting 'OTHER_LDFLAGS')
+FirebaseCoreInternal in Pods (implicit dependency via options '-framework FirebaseCoreInternal' in build setting 'OTHER_LDFLAGS')
+FirebaseCrashlytics in Pods (implicit dependency via options '-framework FirebaseCrashlytics' in build setting 'OTHER_LDFLAGS')
+FirebaseInstallations in Pods (implicit dependency via options '-framework FirebaseInstallations' in build setting 'OTHER_LDFLAGS')
+FirebaseSessions in Pods (implicit dependency via options '-framework FirebaseSessions' in build setting 'OTHER_LDFLAGS')
+GoogleDataTransport in Pods (implicit dependency via options '-framework GoogleDataTransport' in build setting 'OTHER_LDFLAGS')
+GoogleUtilities in Pods (implicit dependency via options '-framework GoogleUtilities' in build setting 'OTHER_LDFLAGS')
+PromisesSwift in Pods (implicit dependency via options '-framework Promises' in build setting 'OTHER_LDFLAGS')
+audioplayers_darwin in Pods (implicit dependency via options '-framework audioplayers_darwin' in build setting 'OTHER_LDFLAGS')
+firebase_core in Pods (implicit dependency via options '-framework firebase_core' in build setting 'OTHER_LDFLAGS')
+firebase_crashlytics in Pods (implicit dependency via options '-framework firebase_crashlytics' in build setting 'OTHER_LDFLAGS')
+games_services in Pods (implicit dependency via options '-framework games_services' in build setting 'OTHER_LDFLAGS')
+in_app_purchase_storekit in Pods (implicit dependency via options '-framework in_app_purchase_storekit' in build setting 'OTHER_LDFLAGS')
+nanopb in Pods (implicit dependency via options '-framework nanopb' in build setting 'OTHER_LDFLAGS')
+path_provider_foundation in Pods (implicit dependency via options '-framework path_provider_foundation' in build setting 'OTHER_LDFLAGS')
+shared_preferences_foundation in Pods (implicit dependency via options '-framework shared_preferences_foundation' in build setting 'OTHER_LDFLAGS')
