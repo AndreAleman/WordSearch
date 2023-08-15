@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.game_template.app-mergeDebugResources-26:/values-fr/values-fr.xml",
+            "outputFile": "com.anipopplaza.languagewordsearch.app-mergeDebugResources-26:/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "/Users/davidaleman/.gradle/caches/transforms-3/58aa1384bde170d075503b845cfcf44c/transformed/jetified-play-services-basement-18.1.0/res/values-fr/values.xml",

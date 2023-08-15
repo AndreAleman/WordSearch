@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.game_template"
+3    package="com.anipopplaza.languagewordsearch"
 4    android:versionCode="1"
 5    android:versionName="0.0.1" >
 6
@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/davidaleman/Documents/wordsearch/android/app/src/debug/AndroidManifest.xml:7:5-66
-15-->/Users/davidaleman/Documents/wordsearch/android/app/src/debug/AndroidManifest.xml:7:22-64
+15-->/Users/davidaleman/Documents/MasterWord/wordsearch/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/Users/davidaleman/Documents/MasterWord/wordsearch/android/app/src/debug/AndroidManifest.xml:7:22-64
 16    <uses-permission android:name="com.android.vending.BILLING" />
 16-->[com.android.billingclient:billing:6.0.1] /Users/davidaleman/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:10:5-67
 16-->[com.android.billingclient:billing:6.0.1] /Users/davidaleman/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:10:22-64
@@ -66,12 +66,12 @@
 40
 41    <permission
 41-->[androidx.core:core:1.9.0] /Users/davidaleman/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
-42        android:name="com.example.game_template.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+42        android:name="com.anipopplaza.languagewordsearch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 42-->[androidx.core:core:1.9.0] /Users/davidaleman/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
 43        android:protectionLevel="signature" />
 43-->[androidx.core:core:1.9.0] /Users/davidaleman/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
 44
-45    <uses-permission android:name="com.example.game_template.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+45    <uses-permission android:name="com.anipopplaza.languagewordsearch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 45-->[androidx.core:core:1.9.0] /Users/davidaleman/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
 45-->[androidx.core:core:1.9.0] /Users/davidaleman/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 46
@@ -81,9 +81,9 @@
 49-->[androidx.core:core:1.9.0] /Users/davidaleman/.gradle/caches/transforms-3/c2aff38445ebad8ddeaa989ecf50f56e/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 50        android:debuggable="true"
 51        android:icon="@mipmap/ic_launcher"
-52        android:label="game_template" >
+52        android:label="languagewordsearch" >
 53        <activity
-54            android:name="com.example.game_template.MainActivity"
+54            android:name="com.anipopplaza.languagewordsearch.MainActivity"
 55            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
 56            android:exported="true"
 57            android:hardwareAccelerated="true"
@@ -135,25 +135,25 @@
 103            android:value="2" />
 104
 105        <service
-105-->[:firebase_crashlytics] /Users/davidaleman/Documents/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+105-->[:firebase_crashlytics] /Users/davidaleman/Documents/MasterWord/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 106            android:name="com.google.firebase.components.ComponentDiscoveryService"
-106-->[:firebase_crashlytics] /Users/davidaleman/Documents/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+106-->[:firebase_crashlytics] /Users/davidaleman/Documents/MasterWord/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
 107            android:directBootAware="true"
 107-->[com.google.firebase:firebase-common:20.3.3] /Users/davidaleman/.gradle/caches/transforms-3/6f9fa5902813f78de2aefcdfcdb180f7/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:34:13-43
 108            android:exported="false" >
 108-->[com.google.firebase:firebase-crashlytics:18.4.0] /Users/davidaleman/.gradle/caches/transforms-3/4a0b71096dccbeadbdd3ffa742f8c047/transformed/jetified-firebase-crashlytics-18.4.0/AndroidManifest.xml:16:13-37
 109            <meta-data
-109-->[:firebase_crashlytics] /Users/davidaleman/Documents/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+109-->[:firebase_crashlytics] /Users/davidaleman/Documents/MasterWord/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 110                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
-110-->[:firebase_crashlytics] /Users/davidaleman/Documents/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-130
+110-->[:firebase_crashlytics] /Users/davidaleman/Documents/MasterWord/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-130
 111                android:value="com.google.firebase.components.ComponentRegistrar" />
-111-->[:firebase_crashlytics] /Users/davidaleman/Documents/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+111-->[:firebase_crashlytics] /Users/davidaleman/Documents/MasterWord/wordsearch/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 112            <meta-data
-112-->[:firebase_core] /Users/davidaleman/Documents/wordsearch/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+112-->[:firebase_core] /Users/davidaleman/Documents/MasterWord/wordsearch/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 113                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-113-->[:firebase_core] /Users/davidaleman/Documents/wordsearch/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+113-->[:firebase_core] /Users/davidaleman/Documents/MasterWord/wordsearch/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 114                android:value="com.google.firebase.components.ComponentRegistrar" />
-114-->[:firebase_core] /Users/davidaleman/Documents/wordsearch/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+114-->[:firebase_core] /Users/davidaleman/Documents/MasterWord/wordsearch/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 115            <meta-data
 115-->[com.google.firebase:firebase-crashlytics:18.4.0] /Users/davidaleman/.gradle/caches/transforms-3/4a0b71096dccbeadbdd3ffa742f8c047/transformed/jetified-firebase-crashlytics-18.4.0/AndroidManifest.xml:17:13-19:85
 116                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
@@ -187,11 +187,11 @@
 130        </service>
 131
 132        <meta-data
-132-->[:google_mobile_ads] /Users/davidaleman/Documents/wordsearch/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-14:36
+132-->[:google_mobile_ads] /Users/davidaleman/Documents/MasterWord/wordsearch/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-14:36
 133            android:name="io.flutter.embedded_views_preview"
-133-->[:google_mobile_ads] /Users/davidaleman/Documents/wordsearch/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-61
+133-->[:google_mobile_ads] /Users/davidaleman/Documents/MasterWord/wordsearch/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-61
 134            android:value="true" />
-134-->[:google_mobile_ads] /Users/davidaleman/Documents/wordsearch/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-33
+134-->[:google_mobile_ads] /Users/davidaleman/Documents/MasterWord/wordsearch/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-33
 135
 136        <uses-library
 136-->[androidx.window:window:1.0.0-beta04] /Users/davidaleman/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
@@ -242,7 +242,7 @@
 161-->[com.google.firebase:firebase-common:20.3.3] /Users/davidaleman/.gradle/caches/transforms-3/6f9fa5902813f78de2aefcdfcdb180f7/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:25:9-30:39
 162            android:name="com.google.firebase.provider.FirebaseInitProvider"
 162-->[com.google.firebase:firebase-common:20.3.3] /Users/davidaleman/.gradle/caches/transforms-3/6f9fa5902813f78de2aefcdfcdb180f7/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:26:13-77
-163            android:authorities="com.example.game_template.firebaseinitprovider"
+163            android:authorities="com.anipopplaza.languagewordsearch.firebaseinitprovider"
 163-->[com.google.firebase:firebase-common:20.3.3] /Users/davidaleman/.gradle/caches/transforms-3/6f9fa5902813f78de2aefcdfcdb180f7/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:27:13-72
 164            android:directBootAware="true"
 164-->[com.google.firebase:firebase-common:20.3.3] /Users/davidaleman/.gradle/caches/transforms-3/6f9fa5902813f78de2aefcdfcdb180f7/transformed/jetified-firebase-common-20.3.3/AndroidManifest.xml:28:13-43
@@ -299,7 +299,7 @@
 193-->[com.google.android.gms:play-services-ads-lite:22.0.0] /Users/davidaleman/.gradle/caches/transforms-3/a4bb9b36eda9dc68812dcd9cb8a0692c/transformed/jetified-play-services-ads-lite-22.0.0/AndroidManifest.xml:60:9-65:43
 194            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
 194-->[com.google.android.gms:play-services-ads-lite:22.0.0] /Users/davidaleman/.gradle/caches/transforms-3/a4bb9b36eda9dc68812dcd9cb8a0692c/transformed/jetified-play-services-ads-lite-22.0.0/AndroidManifest.xml:61:13-76
-195            android:authorities="com.example.game_template.mobileadsinitprovider"
+195            android:authorities="com.anipopplaza.languagewordsearch.mobileadsinitprovider"
 195-->[com.google.android.gms:play-services-ads-lite:22.0.0] /Users/davidaleman/.gradle/caches/transforms-3/a4bb9b36eda9dc68812dcd9cb8a0692c/transformed/jetified-play-services-ads-lite-22.0.0/AndroidManifest.xml:62:13-73
 196            android:exported="false"
 196-->[com.google.android.gms:play-services-ads-lite:22.0.0] /Users/davidaleman/.gradle/caches/transforms-3/a4bb9b36eda9dc68812dcd9cb8a0692c/transformed/jetified-play-services-ads-lite-22.0.0/AndroidManifest.xml:63:13-37
@@ -328,7 +328,7 @@
 209-->[androidx.work:work-runtime:2.7.0] /Users/davidaleman/.gradle/caches/transforms-3/0788b261b5f1c186d068c8d89bf931f5/transformed/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
 210            android:name="androidx.startup.InitializationProvider"
 210-->[androidx.work:work-runtime:2.7.0] /Users/davidaleman/.gradle/caches/transforms-3/0788b261b5f1c186d068c8d89bf931f5/transformed/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
-211            android:authorities="com.example.game_template.androidx-startup"
+211            android:authorities="com.anipopplaza.languagewordsearch.androidx-startup"
 211-->[androidx.work:work-runtime:2.7.0] /Users/davidaleman/.gradle/caches/transforms-3/0788b261b5f1c186d068c8d89bf931f5/transformed/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
 212            android:exported="false" >
 212-->[androidx.work:work-runtime:2.7.0] /Users/davidaleman/.gradle/caches/transforms-3/0788b261b5f1c186d068c8d89bf931f5/transformed/work-runtime-2.7.0/AndroidManifest.xml:34:13-37
@@ -541,7 +541,7 @@
 320-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/davidaleman/.gradle/caches/transforms-3/7d7fafe6351e6ce14bb67797ad51335e/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
 321            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
 321-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/davidaleman/.gradle/caches/transforms-3/7d7fafe6351e6ce14bb67797ad51335e/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-322            android:authorities="com.example.game_template.lifecycle-process"
+322            android:authorities="com.anipopplaza.languagewordsearch.lifecycle-process"
 322-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/davidaleman/.gradle/caches/transforms-3/7d7fafe6351e6ce14bb67797ad51335e/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
 323            android:exported="false"
 323-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/davidaleman/.gradle/caches/transforms-3/7d7fafe6351e6ce14bb67797ad51335e/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37

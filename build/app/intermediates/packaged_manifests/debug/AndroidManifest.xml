@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.game_template"
+    package="com.anipopplaza.languagewordsearch"
     android:versionCode="1"
     android:versionName="0.0.1" >
 
@@ -39,19 +39,19 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <permission
-        android:name="com.example.game_template.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.anipopplaza.languagewordsearch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.game_template.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.anipopplaza.languagewordsearch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="io.flutter.app.FlutterMultiDexApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="game_template" >
+        android:label="languagewordsearch" >
         <activity
-            android:name="com.example.game_template.MainActivity"
+            android:name="com.anipopplaza.languagewordsearch.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
@@ -160,7 +160,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.game_template.firebaseinitprovider"
+            android:authorities="com.anipopplaza.languagewordsearch.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
@@ -192,7 +192,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.example.game_template.mobileadsinitprovider"
+            android:authorities="com.anipopplaza.languagewordsearch.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -208,7 +208,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.game_template.androidx-startup"
+            android:authorities="com.anipopplaza.languagewordsearch.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.work.WorkManagerInitializer"
@@ -319,7 +319,7 @@
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.example.game_template.lifecycle-process"
+            android:authorities="com.anipopplaza.languagewordsearch.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
 
