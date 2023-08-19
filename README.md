@@ -578,3 +578,11 @@ or
 
 These warning come from the various plugins that are used by the template. They are not harmful 
 and can be ignored. The warnings are meant for the plugin authors, not for you, the game developer.
+
+
+
+Platform  Firebase App Id
+web       1:449922013506:web:4678578028f60e16c310db
+android   1:449922013506:android:37ed3012ca89e713c310db
+ios       1:449922013506:ios:5da0ef1d0fa68205c310db
+macos     1:449922013506:ios:f39ca23920500575c310db

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "449922013506",
+    "project_id": "andrews-b09c5",
+    "storage_bucket": "andrews-b09c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449922013506:android:37ed3012ca89e713c310db",
+        "android_client_info": {
+          "package_name": "com.anipopplaza.languagewordsearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449922013506-ajgmiigqj3ufug970lll06rp1mklt30p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABzL_1UjIfF7Q3vipxDeo10C-seuQocUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449922013506-ajgmiigqj3ufug970lll06rp1mklt30p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "449922013506-s9kd3s330e4vmjvsupjfgn299kg8g2iv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.gameTemplate.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

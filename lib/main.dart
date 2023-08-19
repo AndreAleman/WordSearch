@@ -13,6 +13,10 @@ import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:logging/logging.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'dart:io';
+import 'package:flutter/foundation.dart';
 
 import 'src/ads/ads_controller.dart';
 import 'src/app_lifecycle/app_lifecycle.dart';
@@ -43,17 +47,17 @@ Future<void> main() async {
   // See the 'Crashlytics' section of the main README.md file for details.
 
   FirebaseCrashlytics? crashlytics;
-  // if (!kIsWeb && (Platform.isIOS || Platform.isAndroid)) {
-  //   try {
-  //     WidgetsFlutterBinding.ensureInitialized();
-  //     await Firebase.initializeApp(
-  //       options: DefaultFirebaseOptions.currentPlatform,
-  //     );
-  //     crashlytics = FirebaseCrashlytics.instance;
-  //   } catch (e) {
-  //     debugPrint("Firebase couldn't be initialized: $e");
-  //   }
-  // }
+  if (!kIsWeb && (Platform.isIOS || Platform.isAndroid)) {
+    try {
+      WidgetsFlutterBinding.ensureInitialized();
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+      crashlytics = FirebaseCrashlytics.instance;
+    } catch (e) {
+      debugPrint("Firebase couldn't be initialized: $e");
+    }
+  }
 
   await guardWithCrashlytics(
     guardedMain,
