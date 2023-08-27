@@ -1,0 +1,20 @@
+"/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/GoogleDataTransport+GoogleDataTransportProtocol.swift":
+  dependencies: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/GoogleDataTransport+GoogleDataTransportProtocol.d"
+  object: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/GoogleDataTransport+GoogleDataTransportProtocol.o"
+  diagnostics: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/GoogleDataTransport+GoogleDataTransportProtocol.dia"
+  swift-dependencies: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/GoogleDataTransport+GoogleDataTransportProtocol.swiftdeps"
+"/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Installations+InstallationsProtocol.swift":
+  object: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/Installations+InstallationsProtocol.o"
+  swift-dependencies: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/Installations+InstallationsProtocol.swiftdeps"
+  diagnostics: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/Installations+InstallationsProtocol.dia"
+  dependencies: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/Installations+InstallationsProtocol.d"
+"/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/FirebaseSessionsError.swift":
+  swift-dependencies: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/FirebaseSessionsError.swiftdeps"
+  object: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/FirebaseSessionsError.o"
+  dependencies: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/FirebaseSessionsError.d"
+  diagnostics: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/FirebaseSessionsError.dia"
+"/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/LocalOverrideSettings.swift":
+  object: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/LocalOverrideSettings.o"
+  dependencies: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/LocalOverrideSettings.d"
+  swift-dependencies: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/LocalOverrideSettings.swiftdeps"
+  diagnostics: "/Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseSessions.build/Objects-normal/x86_64/LocalOverrideSettings.dia"

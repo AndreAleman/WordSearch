@@ -1,0 +1,36 @@
+dependencies: \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSApplication.m \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCrashlytics.build/module.modulemap \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSApplication.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSHost.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSFile.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSUtility.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSGlobals.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSContext.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSBinaryImage.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSFeatures.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSDefines.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Shared/FIRCLSMachO/FIRCLSMachO.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Components/FIRCLSUserLogging.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSException.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSMachException.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Handlers/FIRCLSSignal.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSAllocate.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSInternalLogging.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/Helpers/FIRCLSLogger.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/GoogleUtilities.build/module.modulemap \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/UserDefaults/Public/GoogleUtilities/GULUserDefaults.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/NSData+zlib/Public/GoogleUtilities/GULNSData+zlib.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLoggerLevel.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Logger/Public/GoogleUtilities/GULLogger.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/NSURLSession+GULPromises.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULURLSessionDataResponse.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULSecureCoding.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULNetworkInfo.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainUtils.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainStorage.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorageUserDefaults.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorage.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorable.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/GoogleUtilities/GoogleUtilities/Environment/Public/GoogleUtilities/GULAppEnvironmentUtil.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/Target\ Support\ Files/GoogleUtilities/GoogleUtilities-umbrella.h

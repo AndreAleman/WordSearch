@@ -1,0 +1,45 @@
+dependencies: \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/DataCollection/FIRCLSDataCollectionArbiter.m \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCrashlytics.build/module.modulemap \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/DataCollection/FIRCLSDataCollectionArbiter.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromises.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/PromisesObjC.build/module.modulemap \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Wrap.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Validate.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Timeout.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Then.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Testing.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Retry.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Reduce.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Recover.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Race.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Do.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Delay.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Catch.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Await.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Async.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Any.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+Always.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromiseError.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/PromisesObjC/Sources/FBLPromises/include/FBLPromise+All.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/Target\ Support\ Files/PromisesObjC/PromisesObjC-umbrella.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FirebaseCoreInternal.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseCore.build/module.modulemap \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIRAppInternal.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIRComponent.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIRComponentContainer.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIRComponentType.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIRDependency.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIRHeartbeatLogger.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIRLibrary.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIRLogger.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/FirebaseCore/Extension/FIROptionsInternal.h \
+  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseCrashlytics/Crashlytics/Crashlytics/FIRCLSUserDefaults/FIRCLSUserDefaults.h

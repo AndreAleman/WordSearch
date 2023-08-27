@@ -1,0 +1,11 @@
+framework module games_services {
+  umbrella header "games_services-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module games_services.Swift {
+  header "games_services-Swift.h"
+  requires objc
+}

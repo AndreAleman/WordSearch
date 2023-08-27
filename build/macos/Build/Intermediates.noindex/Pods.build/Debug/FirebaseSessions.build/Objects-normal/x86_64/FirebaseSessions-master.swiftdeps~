@@ -1,0 +1,47 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "7a011c8df8fa507d564ca7b8cedf71fac617ec2678d8f85437f30766291e3a8e"
+build_start_time: [1692471765, 19064903]
+build_end_time: [1692471765, 124673843]
+inputs:
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/ApplicationInfo.swift": !private [1692471128, 505029201]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Development/DevEventConsoleLogger.swift"
+  : !private [1692471128, 508524179]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Development/NanoPB+CustomStringConvertible.swift"
+  : !private [1692471128, 509324312]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/EventGDTLogger.swift": !private [1692471128, 507460355]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/FirebaseSessions.swift": !private [1692471128, 514765024]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/FirebaseSessionsError.swift"
+  : !private [1692471128, 516435861]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/GoogleDataTransport+GoogleDataTransportProtocol.swift"
+  : !private [1692471128, 506915092]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Installations+InstallationsProtocol.swift"
+  : !private [1692471128, 511668682]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Logger.swift": !private [1692471128, 510592460]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/NetworkInfo.swift": !private [1692471128, 506319046]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Public/SessionsDependencies.swift"
+  : !private [1692471128, 513525962]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Public/SessionsProvider.swift"
+  : !private [1692471128, 512396097]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Public/SessionsSubscriber.swift"
+  : !private [1692471128, 513019561]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/SessionCoordinator.swift": !private [1692471128, 514069080]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/SessionGenerator.swift": !private [1692471128, 511159896]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/SessionInitiator.swift": !private [1692471128, 505661249]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/SessionStartEvent.swift": !private [1692471128, 515789985]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/LocalOverrideSettings.swift"
+  : !private [1692471128, 503941774]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/RemoteSettings.swift"
+  : !private [1692471128, 500255584]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/SDKDefaultSettings.swift"
+  : !private [1692471128, 502032279]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/SessionsSettings.swift"
+  : !private [1692471128, 500801324]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/SettingsCacheClient.swift"
+  : !private [1692471128, 501390457]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/SettingsDownloadClient.swift"
+  : !private [1692471128, 503410816]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/SettingsProtocol.swift"
+  : !private [1692471128, 502733469]
+  ? "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Settings/SettingsProvider.swift"
+  : !private [1692471128, 504468679]
+  "/Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/FirebaseSessions/FirebaseSessions/Sources/Time.swift": !private [1692471128, 509982347]

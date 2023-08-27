@@ -1,20 +1,17 @@
-// Copyright 2022, the Flutter project authors. Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../audio/audio_controller.dart';
 import '../audio/sounds.dart';
 import '../player_progress/player_progress.dart';
 import '../style/palette.dart';
 import '../style/responsive_screen.dart';
-import 'levels.dart';
 
 class LevelSelectionScreen extends StatelessWidget {
-  const LevelSelectionScreen({super.key});
+  // Remove the 'super(key: key)' part as it is not needed
+  const LevelSelectionScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,42 +23,60 @@ class LevelSelectionScreen extends StatelessWidget {
       body: ResponsiveScreen(
         squarishMainArea: Column(
           children: [
+            // Widget to display the title of the screen
             const Padding(
               padding: EdgeInsets.all(16),
               child: Align(
-                alignment: Alignment.topRight,
+                alignment: Alignment.topCenter,
                 child: Text(
-                  'Select Category',
+                  'Select Level',
                   style: TextStyle(fontFamily: 'Cursive', fontSize: 30),
                 ),
               ),
             ),
             const SizedBox(height: 50),
             Expanded(
-              child: GridView.count(
-                crossAxisCount: 2,
-                children: [
-                  for (final level in gameLevels)
-                    ListTile(
-                      enabled: playerProgress.highestLevelReached >=
-                          level.number - 1,
-                      onTap: () {
-                        final audioController = context.read<AudioController>();
-                        audioController.playSfx(SfxType.buttonTap);
+              child: StreamBuilder<QuerySnapshot>(
+                // Stream to listen for changes in the 'Levels' collection in Firestore
+                stream: FirebaseFirestore.instance
+                    .collection('Languages')
+                    .snapshots(),
+                builder: (BuildContext context,
+                    AsyncSnapshot<QuerySnapshot> snapshot) {
+                  if (!snapshot.hasData) {
+                    // Show a loading indicator while data is being fetched
+                    return Center(
+                      child: Text(
+                        'No Categories yet!',
+                        style: TextStyle(fontSize: 18),
+                      ),
+                    );
+                  }
 
-                        GoRouter.of(context)
-                            .go('/play/session/${level.number}');
-                      },
-                      leading: Text(level.number.toString()),
-                      title: Text('Level #${level.number}'),
-                    )
-                ],
+                  return GridView.count(
+                    crossAxisCount: 2,
+                    children: snapshot.data!.docs.map((document) {
+                      return ListTile(
+                        onTap: () {
+                          final audioController =
+                              context.read<AudioController>();
+                          audioController.playSfx(SfxType.buttonTap);
+                          // Navigate to the CategorySelectionScreen with the level document ID
+                          GoRouter.of(context).go('/categories/${document.id}');
+                        },
+                        // Display the level ID as the title of the ListTile
+                        title: Text('Level ${document.id}'),
+                      );
+                    }).toList(),
+                  );
+                },
               ),
             ),
           ],
         ),
         rectangularMenuArea: FilledButton(
           onPressed: () {
+            // Navigate back to the previous screen
             GoRouter.of(context).go('/');
           },
           child: const Text('Back'),
