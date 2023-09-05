@@ -62,7 +62,8 @@ class LevelSelectionScreen extends StatelessWidget {
                               context.read<AudioController>();
                           audioController.playSfx(SfxType.buttonTap);
                           // Navigate to the CategorySelectionScreen with the level document ID
-                          GoRouter.of(context).go('/categories/${document.id}');
+                          GoRouter.of(context)
+                              .go('/play/categories/${document.id}');
                         },
                         // Display the level ID as the title of the ListTile
                         title: Text('Level ${document.id}'),

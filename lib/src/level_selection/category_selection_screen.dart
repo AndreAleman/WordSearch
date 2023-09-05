@@ -47,32 +47,36 @@ class CategorySelectionScreen extends StatelessWidget {
                     .snapshots(),
                 builder: (BuildContext context,
                     AsyncSnapshot<QuerySnapshot> snapshot) {
-                  if (!snapshot.hasData) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
                     // Show a loading indicator while data is being fetched
-                    return Center(
-                      child: Text(
-                        'No Categories yet!',
-                        style: TextStyle(fontSize: 18),
-                      ),
+                    return const Center(child: CircularProgressIndicator());
+                  } else if (snapshot.hasError) {
+                    // Show an error message
+                    return Center(child: Text('Error: ${snapshot.error}'));
+                  } else if (snapshot.data == null ||
+                      snapshot.data!.docs.isEmpty) {
+                    // Show a message when there are no categories
+                    return Center(child: Text('No categories found'));
+                  } else {
+                    // Display the categories
+                    return GridView.count(
+                      crossAxisCount: 2,
+                      children: snapshot.data!.docs.map((document) {
+                        return ListTile(
+                          onTap: () {
+                            final audioController =
+                                context.read<AudioController>();
+                            audioController.playSfx(SfxType.buttonTap);
+                            // Navigate to the WordPairSelectionScreen with the category document ID
+                            GoRouter.of(context).go(
+                                '/play/categories/${language}/wordsearch/${document.id}');
+                          },
+                          // Display the category name as the title of the ListTile
+                          title: Text(document.id),
+                        );
+                      }).toList(),
                     );
                   }
-
-                  return GridView.count(
-                    crossAxisCount: 2,
-                    children: snapshot.data!.docs.map((document) {
-                      return ListTile(
-                        onTap: () {
-                          final audioController =
-                              context.read<AudioController>();
-                          audioController.playSfx(SfxType.buttonTap);
-                          // Navigate to the WordPairSelectionScreen with the category document ID
-                          GoRouter.of(context).go('/wordpairs/${document.id}');
-                        },
-                        // Display the category name as the title of the ListTile
-                        title: Text(document.id),
-                      );
-                    }).toList(),
-                  );
                 },
               ),
             ),
@@ -81,7 +85,7 @@ class CategorySelectionScreen extends StatelessWidget {
         rectangularMenuArea: FilledButton(
           onPressed: () {
             // Navigate back to the previous screen
-            GoRouter.of(context).go('/levelselection');
+            GoRouter.of(context).go('/play');
           },
           child: const Text('Back'),
         ),
