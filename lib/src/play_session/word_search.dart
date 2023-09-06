@@ -39,25 +39,87 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
   Map<String, dynamic>? _wordPairsData;
   String? _englishWord;
   List<List<String>> _wordSearchGrid = [];
+  final int gridSize = 10;
+  int wordLength = 0; // Length of the objective word
+  int startRow = 0;
+  int startCol = 0;
 
   @override
   void initState() {
     super.initState();
     _subscribeToWordPairs();
-    _generateWordSearchGrid();
   }
 
-  void _generateWordSearchGrid() {
-    for (int i = 0; i < 10; i++) {
-      List<String> row = [];
-      for (int j = 0; j < 10; j++) {
-        String randomLetter = _getRandomLetter();
-        row.add(randomLetter);
-      }
+  List<int> getRandomDirection() {
+    final random = Random();
+    final directions = [
+      [-1, -1],
+      [-1, 0],
+      [-1, 1],
+      [0, -1],
+      [0, 1],
+      [1, -1],
+      [1, 0],
+      [1, 1]
+    ]; // Represents the 8 possible directions
+    return directions[random.nextInt(directions.length)];
+  }
+
+// Generate the initial word search grid with the objective word and random letters
+  void _generateWordSearchGrid(String objectiveWord) {
+    objectiveWord.toUpperCase();
+    // Initialize the grid with empty strings
+    for (int i = 0; i < gridSize; i++) {
+      List<String> row = List<String>.filled(gridSize, '');
       _wordSearchGrid.add(row);
+    }
+
+    // Randomly select a starting point
+    final random = Random();
+    startRow = random.nextInt(gridSize);
+    startCol = random.nextInt(gridSize);
+
+    // Try to place the objective word in a random direction
+    bool wordPlaced = false;
+    print('$objectiveWord we made it');
+    while (!wordPlaced) {
+      List<int> direction = getRandomDirection();
+      int dx = direction[0], dy = direction[1];
+
+      int endRow = startRow + dx * (wordLength - 1);
+      int endCol = startCol + dy * (wordLength - 1);
+
+      print('Direction: $direction');
+      print('Start: ($startRow, $startCol)');
+      print('End: ($endRow, $endCol)');
+
+      // Check if the word fits within the grid bounds
+      if (endRow >= 0 &&
+          endCol >= 0 &&
+          endRow < gridSize &&
+          endCol < gridSize) {
+        // If it fits, place the word in the grid in the current direction
+        for (int i = 0; i < wordLength; i++) {
+          _wordSearchGrid[startRow + i * dx][startCol + i * dy] =
+              _englishWord![i];
+          print('in the for loop');
+        }
+        wordPlaced = true;
+        print('wordplace = true');
+      }
+    }
+
+    // Fill the rest of the grid with random letters
+    for (int i = 0; i < gridSize; i++) {
+      for (int j = 0; j < gridSize; j++) {
+        if (_wordSearchGrid[i][j] == '') {
+          _wordSearchGrid[i][j] = _getRandomLetter();
+        }
+      }
     }
   }
 
+  // Generate a random letter
   String _getRandomLetter() {
     final random = Random();
     int randomIndex = random.nextInt(26);
@@ -65,12 +127,7 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
     return letter;
   }
 
-  @override
-  void dispose() {
-    _subscription?.cancel();
-    super.dispose();
-  }
-
+  // Subscribe to the word pairs data from the database
   void _subscribeToWordPairs() {
     final categoriesCollection = FirebaseFirestore.instance
         .collection('Languages')
@@ -85,22 +142,37 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
         setState(() {
           _wordPairsData = snapshot.data() as Map<String, dynamic>;
           _englishWord = _wordPairsData!['pair1']['word1'];
+          wordLength = _englishWord!.length;
+          print(
+              '_englishWord: $_englishWord'); // Set the word length based on the objective word
         });
+        if (_englishWord != null) {
+          _generateWordSearchGrid(_englishWord!); // Pass the non-null value
+        }
       }
     });
   }
 
+  // Mark the objective word as found
   void _markWordAsFound() {
     setState(() {
       _isFound = true;
     });
   }
 
+  // Place the objective word in the word search grid
+
+  @override
+  void dispose() {
+    _subscription?.cancel();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Word Search'),
+        title: Text('$wordLength ($startRow, $startCol)'),
       ),
       body: Center(
         child: Column(
@@ -112,7 +184,7 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
                 _englishWord!,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-            SizedBox(height: 16),
+            SizedBox(height: 10),
             Text('Word Search Grid:'),
             for (List<String> row in _wordSearchGrid)
               Row(
