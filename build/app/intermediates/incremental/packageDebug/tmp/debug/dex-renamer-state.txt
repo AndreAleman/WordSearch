@@ -1,8 +1,8 @@
-#Thu Sep 07 22:16:26 EDT 2023
-base.0=/Users/davidaleman/Documents/MasterWord/wordsearch/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-base.1=/Users/davidaleman/Documents/MasterWord/wordsearch/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
-base.2=/Users/davidaleman/Documents/MasterWord/wordsearch/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
-base.3=/Users/davidaleman/Documents/MasterWord/wordsearch/build/app/intermediates/dex/debug/mergeDexDebug/classes4.dex
+#Sun Sep 10 10:47:42 EDT 2023
+base.0=/Users/andresreality/Documents/MasterWS/WordSearch/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+base.1=/Users/andresreality/Documents/MasterWS/WordSearch/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+base.2=/Users/andresreality/Documents/MasterWS/WordSearch/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
+base.3=/Users/andresreality/Documents/MasterWS/WordSearch/build/app/intermediates/dex/debug/mergeDexDebug/classes4.dex
 path.0=classes.dex
 path.1=classes2.dex
 path.2=classes3.dex

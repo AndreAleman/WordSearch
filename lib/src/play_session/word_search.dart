@@ -39,10 +39,12 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
   Map<String, dynamic>? _wordPairsData;
   String? _englishWord;
   List<List<String>> _wordSearchGrid = [];
-  final int gridSize = 10;
+  final int gridSize = 8;
   int wordLength = 0; // Length of the objective word
   int startRow = 0;
   int startCol = 0;
+
+  Set<Point> highlightedCells = {};
 
   @override
   void initState() {
@@ -168,43 +170,78 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('$wordLength ($startRow, $startCol)'),
+
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: Text('$wordLength ($startRow, $startCol)'),
+    ),
+    body: Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Word Pairs:'),
+          if (_englishWord != null)
+            Text(
+              _englishWord!,
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+          SizedBox(height: 10),
+          Text('Word Search Grid:'),
+          SingleChildScrollView(
+            child: LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints) {
+                double cellHeight = constraints.maxHeight / gridSize;
+                double cellWidth = constraints.maxWidth / gridSize;
+
+                return GestureDetector(
+                  onPanUpdate: (DragUpdateDetails details) {
+                    RenderBox box = context.findRenderObject() as RenderBox;
+                    Offset localPosition = box.globalToLocal(details.globalPosition);
+
+                    int row = (localPosition.dy / cellHeight).floor();
+                    int col = (localPosition.dx / cellWidth).floor();
+
+                    setState(() {
+                      highlightedCells.add(Point(row, col));
+                    });
+                  },
+                  child: Column(
+                    children: [
+                      for (int i = 0; i < gridSize; i++)
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            for (int j = 0; j < gridSize; j++)
+                              GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    highlightedCells.add(Point(i, j));
+                                  });
+                                },
+                                child: Container(
+                                  width: 24,
+                                  height: 24,
+                                  margin: EdgeInsets.all(2),
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.black),
+                                    color: highlightedCells.contains(Point(i, j)) ? Colors.yellow : Colors.white,
+                                  ),
+                                  child: Center(child: Text(_wordSearchGrid[i][j])),
+                                ),
+                              ),
+                          ],
+                        ),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Word Pairs:'),
-            if (_englishWord != null)
-              Text(
-                _englishWord!,
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-            SizedBox(height: 10),
-            Text('Word Search Grid:'),
-            for (List<String> row in _wordSearchGrid)
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  for (String letter in row)
-                    Container(
-                      width: 24,
-                      height: 24,
-                      margin: EdgeInsets.all(2),
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black),
-                      ),
-                      child: Center(child: Text(letter)),
-                    ),
-                ],
-              ),
-          ],
-        ),
-      ),
-    );
-  }
+    ),
+  );
+}
 }

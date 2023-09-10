@@ -1,4 +1,0 @@
-dependencies: \
-  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/Target\ Support\ Files/shared_preferences_foundation/shared_preferences_foundation-dummy.m \
-  /Users/davidaleman/Documents/MasterWord/wordsearch/build/macos/Build/Intermediates.noindex/Pods.build/Debug/shared_preferences_foundation.build/module.modulemap \
-  /Users/davidaleman/Documents/MasterWord/wordsearch/macos/Pods/Target\ Support\ Files/shared_preferences_foundation/shared_preferences_foundation-prefix.pch

@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="16"
-6-->/Users/davidaleman/.pub-cache/hosted/pub.dev/in_app_purchase_android-0.3.0+11/android/src/main/AndroidManifest.xml
+6-->/Users/andresreality/.pub-cache/hosted/pub.dev/in_app_purchase_android-0.3.0+11/android/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="16" />
-7-->/Users/davidaleman/.pub-cache/hosted/pub.dev/in_app_purchase_android-0.3.0+11/android/src/main/AndroidManifest.xml
+7-->/Users/andresreality/.pub-cache/hosted/pub.dev/in_app_purchase_android-0.3.0+11/android/src/main/AndroidManifest.xml
 8
 9</manifest>
