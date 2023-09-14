@@ -43,8 +43,13 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
   int wordLength = 0; // Length of the objective word
   int startRow = 0;
   int startCol = 0;
+  Point<int>? firstDirection;
+  String _currentObjectiveWord = '';
 
-  Set<Point> highlightedCells = {};
+
+List<Point<int>> highlightedCells = [];
+
+
 
   @override
   void initState() {
@@ -70,6 +75,9 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
 // Generate the initial word search grid with the objective word and random letters
   void _generateWordSearchGrid(String objectiveWord) {
     objectiveWord.toUpperCase();
+
+    // Clear the existing grid
+  _wordSearchGrid.clear();
     // Initialize the grid with empty strings
     for (int i = 0; i < gridSize; i++) {
       List<String> row = List<String>.filled(gridSize, '');
@@ -121,6 +129,15 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
     }
   }
 
+  String getHighlightedWord() {
+  List<String> highlightedWord = [];
+  for (Point<int> point in highlightedCells) {
+    highlightedWord.add(_wordSearchGrid[point.x][point.y]);
+  }
+  return highlightedWord.join('');
+}
+
+
   // Generate a random letter
   String _getRandomLetter() {
     final random = Random();
@@ -130,30 +147,47 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
   }
 
   // Subscribe to the word pairs data from the database
-  void _subscribeToWordPairs() {
-    final categoriesCollection = FirebaseFirestore.instance
-        .collection('Languages')
-        .doc(widget.language)
-        .collection('Categories');
+List<String> _categoryWords = [];
 
-    categoriesCollection
-        .doc(widget.category)
-        .get()
-        .then((DocumentSnapshot snapshot) {
-      if (snapshot.exists) {
-        setState(() {
-          _wordPairsData = snapshot.data() as Map<String, dynamic>;
-          _englishWord = _wordPairsData!['pair1']['word1'];
-          wordLength = _englishWord!.length;
-          print(
-              '_englishWord: $_englishWord'); // Set the word length based on the objective word
-        });
-        if (_englishWord != null) {
-          _generateWordSearchGrid(_englishWord!); // Pass the non-null value
-        }
+void _subscribeToWordPairs() {
+  final categoriesCollection = FirebaseFirestore.instance
+      .collection('Languages')
+      .doc(widget.language)
+      .collection('Categories');
+
+  categoriesCollection
+      .doc(widget.category)
+      .get()
+      .then((DocumentSnapshot snapshot) {
+    if (snapshot.exists) {
+      setState(() {
+        _wordPairsData = snapshot.data() as Map<String, dynamic>;
+        _englishWord = _wordPairsData!['pair1']['word1'];
+        wordLength = _englishWord!.length;
+        print('_englishWord: $_englishWord');
+      });
+
+      // Clear the existing words in the category
+      _categoryWords.clear();
+
+      // Iterate through the word pairs and add both words in each pair to the category list
+      for (int i = 1; i <= _wordPairsData!.length; i++) {
+        String word1 = _wordPairsData!['pair$i']['word1'];
+        String word2 = _wordPairsData!['pair$i']['word2'];
+        _categoryWords.add(word1);
+        _categoryWords.add(word2);
       }
-    });
-  }
+
+      if (_englishWord != null) {
+        _generateWordSearchGrid(_englishWord!);
+      }
+    }
+  });
+}
+
+
+
+
 
   // Mark the objective word as found
   void _markWordAsFound() {
@@ -169,7 +203,6 @@ class _WordSearchScreenState extends State<WordSearchScreen> {
     _subscription?.cancel();
     super.dispose();
   }
-
 
 @override
 Widget build(BuildContext context) {
@@ -195,53 +228,85 @@ Widget build(BuildContext context) {
                 double cellHeight = constraints.maxHeight / gridSize;
                 double cellWidth = constraints.maxWidth / gridSize;
 
-                return GestureDetector(
-                  onPanUpdate: (DragUpdateDetails details) {
-                    RenderBox box = context.findRenderObject() as RenderBox;
-                    Offset localPosition = box.globalToLocal(details.globalPosition);
-
-                    int row = (localPosition.dy / cellHeight).floor();
-                    int col = (localPosition.dx / cellWidth).floor();
-
-                    setState(() {
-                      highlightedCells.add(Point(row, col));
-                    });
-                  },
-                  child: Column(
-                    children: [
-                      for (int i = 0; i < gridSize; i++)
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            for (int j = 0; j < gridSize; j++)
-                              GestureDetector(
-                                onTap: () {
-                                  setState(() {
-                                    highlightedCells.add(Point(i, j));
-                                  });
-                                },
-                                child: Container(
-                                  width: 24,
-                                  height: 24,
-                                  margin: EdgeInsets.all(2),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.black),
-                                    color: highlightedCells.contains(Point(i, j)) ? Colors.yellow : Colors.white,
-                                  ),
-                                  child: Center(child: Text(_wordSearchGrid[i][j])),
+                return Column(
+                  children: [
+                    for (int i = 0; i < gridSize; i++)
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          for (int j = 0; j < gridSize; j++)
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  Point<int> currentPoint = Point(i, j);
+                                  if (highlightedCells.isEmpty) {
+                                    highlightedCells.add(currentPoint);
+                                  } else if (firstDirection == null) {
+                                    Point<int> direction = Point(i - highlightedCells.last.x, j - highlightedCells.last.y);
+                                    if (direction.x.abs() <= 1 && direction.y.abs() <= 1) {
+                                      firstDirection = direction;
+                                      highlightedCells.add(currentPoint);
+                                    }
+                                  } else {
+                                    Point<int> currentDirection = Point(i - highlightedCells.last.x, j - highlightedCells.last.y);
+                                    if (currentDirection == firstDirection) {
+                                      highlightedCells.add(currentPoint);
+                                    }
+                                  }
+                                });
+                              },
+                              child: Container(
+                                width: 24,
+                                height: 24,
+                                margin: EdgeInsets.all(2),
+                                decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black),
+                                  color: highlightedCells.contains(Point(i, j)) ? Colors.yellow : Colors.white,
                                 ),
+                                child: Center(child: Text(_wordSearchGrid[i][j])),
                               ),
-                          ],
-                        ),
-                    ],
-                  ),
+                            ),
+                        ],
+                      ),
+                  ],
                 );
               },
             ),
           ),
+         ElevatedButton(
+onPressed: () {
+  String highlightedWord = getHighlightedWord();
+  if (highlightedWord == _englishWord) {
+    print('Correct!');
+    _currentPairIndex++;
+    if (_currentPairIndex < _categoryWords.length) {
+      _englishWord = _categoryWords[_currentPairIndex];
+      wordLength = _englishWord!.length;
+      highlightedCells.clear(); // Clear the highlighted cells
+      firstDirection = null; // Reset the first direction
+      _generateWordSearchGrid(_englishWord!);
+      setState(() {}); 
+    } else {
+      Navigator.pop(context);
+    }
+  } else {
+    print('Incorrect. The highlighted word was $highlightedWord, but the expected word was $_englishWord.');
+    highlightedCells.clear(); // Clear the highlighted cells
+    firstDirection = null; // Reset the first direction
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Try again!')),
+            highlightedCells.clear();
+    );
+  }
+},
+
+
+  child: Text('Submit'),
+),
+
+
         ],
       ),
     ),
   );
-}
-}
+}}
